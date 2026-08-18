@@ -1,3 +1,7 @@
+DROP TABLE IF EXISTS grade;
+DROP TABLE IF EXISTS exam;
+DROP TABLE IF EXISTS student;
+
 CREATE TABLE IF NOT EXISTS students (
     id         VARCHAR(36)  PRIMARY KEY,
     first_name VARCHAR(100) NOT NULL,
