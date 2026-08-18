@@ -1,16 +1,16 @@
-package org.spring.studentgradeexam.repository;
+package org.spring.studentgradeexam.db;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
-public final class Database {
+public final class DatabaseConnection {
 
     private static final String URL = "jdbc:postgresql://localhost:5432/student_grade_exam";
     private static final String USER = "postgres";
     private static final String PASSWORD = "";
 
-    private Database() {
+    private DatabaseConnection() {
     }
 
     public static Connection getConnection() throws SQLException {
